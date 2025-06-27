@@ -1,0 +1,777 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+html:before,
+html:after,
+body:before,
+body:after,
+div:before,
+div:after,
+span:before,
+span:after,
+object:before,
+object:after,
+iframe:before,
+iframe:after,
+h1:before,
+h1:after,
+h2:before,
+h2:after,
+h3:before,
+h3:after,
+h4:before,
+h4:after,
+h5:before,
+h5:after,
+h6:before,
+h6:after,
+p:before,
+p:after,
+blockquote:before,
+blockquote:after,
+pre:before,
+pre:after,
+abbr:before,
+abbr:after,
+address:before,
+address:after,
+cite:before,
+cite:after,
+code:before,
+code:after,
+del:before,
+del:after,
+dfn:before,
+dfn:after,
+em:before,
+em:after,
+img:before,
+img:after,
+ins:before,
+ins:after,
+kbd:before,
+kbd:after,
+q:before,
+q:after,
+samp:before,
+samp:after,
+small:before,
+small:after,
+strong:before,
+strong:after,
+var:before,
+var:after,
+b:before,
+b:after,
+i:before,
+i:after,
+dl:before,
+dl:after,
+dt:before,
+dt:after,
+dd:before,
+dd:after,
+ol:before,
+ol:after,
+ul:before,
+ul:after,
+li:before,
+li:after,
+fieldset:before,
+fieldset:after,
+form:before,
+form:after,
+label:before,
+label:after,
+legend:before,
+legend:after,
+article:before,
+article:after,
+aside:before,
+aside:after,
+canvas:before,
+canvas:after,
+details:before,
+details:after,
+figcaption:before,
+figcaption:after,
+figure:before,
+figure:after,
+footer:before,
+footer:after,
+header:before,
+header:after,
+hgroup:before,
+hgroup:after,
+menu:before,
+menu:after,
+nav:before,
+nav:after,
+section:before,
+section:after,
+summary:before,
+summary:after,
+time:before,
+time:after,
+mark:before,
+mark:after,
+audio:before,
+audio:after,
+video:before,
+video:after,
+button:before,
+button:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+sub,
+sup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+sub:before,
+sub:after,
+sup:before,
+sup:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a:before,
+a:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+  content: none;
+}
+
+q:before,
+q:after {
+  content: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+input[type="text"],
+textarea {
+  -webkit-appearance: none;
+}
+input[type="text"]::-ms-clear,
+textarea::-ms-clear {
+  display: none;
+}
+
+input,
+textarea {
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.quiz {
+}
+
+.quiz_step__list {
+  display: flex;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.quiz_step__item {
+  display: flex;
+  gap: 5px;
+  position: relative;
+}
+
+.quiz_step__list {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.quiz_steps__formsItem:nth-child(1),
+.quiz_steps__formsItem:nth-child(3) {
+  /* display: flex; */
+  gap: 5px;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.09);
+
+  border: 1px solid #dedede;
+  padding: 32px 30px;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.quiz_steps__formsItem:nth-child(4) {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.quiz_stepItem__circle {
+  color: #fff;
+  background-color: #2689ee;
+  border: 1px solid #2689ee;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.quiz_stepItem__circle.future {
+  border: 1px solid #959595;
+  color: #696969;
+  background-color: transparent;
+}
+.quiz_stepItem__circle.active {
+  background-color: #2689ee;
+  border: 1px solid #2689ee;
+}
+.quiz_stepItem__circle.completed {
+  background-color: transparent;
+  color: #696969;
+  border: 2px solid #2689ee;
+}
+
+.quiz_stepItem__circle.future ~ p {
+  color: #696969;
+}
+.quiz_stepItem__circle.completed ~ p {
+  color: #696969;
+}
+
+.quiz_step__item p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.quiz_step__item:not(:last-child):after {
+  content: "";
+  width: 30px;
+  margin-bottom: -4px;
+  transform: translateY(-50%);
+  border-bottom: 1px solid black;
+}
+
+.quiz_steps__formsItem__head {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.quiz_steps__formsItem__head img {
+  max-width: 50px;
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+}
+
+.quiz_steps__formsItem__head p {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz_steps__forms {
+  /* position: relative;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.09);
+
+  border: 1px solid #dedede;
+  padding: 32px 30px; */
+}
+
+.quiz_tabs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  gap: 10px;
+}
+
+.quiz_tabs__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.quiz_tabs__btn.active {
+  color: #2689ee;
+  border: 2px solid #2689ee;
+  background-color: #e8f4fc;
+  pointer-events: none;
+}
+
+.quiz_input input,
+.quiz_input textarea,
+.quiz_input select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid black;
+  padding: 14px 20px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.quiz_inputs p {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.quiz_inputs__group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.quiz_tabs {
+  margin-bottom: 20px;
+}
+
+.quiz_inputs__location {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.quiz_input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.quiz_btn {
+  background-color: #2689ee;
+  border: 1px solid #2689ee;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.location-img {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  filter: invert(1);
+}
+.location-img-line {
+  position: absolute;
+  right: 29px;
+  width: 2px;
+  background-color: black;
+  height: 60px;
+  top: -35px;
+}
+
+.quiz_steps__formsItem__cars {
+  padding: 30px 30px 17px;
+  max-width: 1110px;
+  background-color: #fff;
+  padding: 20px 14px 16px;
+  margin-top: 0;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.09);
+  border: 1px solid #dedede;
+  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
+}
+
+.cars__head {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.cars__head ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cars__head ul li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 10px;
+}
+
+.cars_list_item__icon {
+  max-width: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cars_list_item__icon img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cars__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  grid-gap: 20px;
+}
+
+.cars_img img {
+  width: 100%;
+}
+
+.cars_info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cars_info li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cars_info li img {
+  width: 20px;
+}
+
+.cars_price {
+  background-color: #f5f5f5;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cars_price span {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.btn {
+  background-color: #2689ee;
+  border: 1px solid #2689ee;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.checkbox_item input {
+  display: none;
+}
+
+.checkbox_item label {
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  margin: 15px 0;
+}
+
+.checkbox_item label .square:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 13px;
+  height: 13px;
+  border-radius: 4px;
+  background-image: url("checkbox-checked.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.3s ease-in-out;
+}
+.checkbox_item label .square {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  border: 1px solid black;
+  border-radius: 4px;
+  transform: translateY(-50%);
+}
+
+.checkbox_item input:checked + label .square:before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.quiz_textarea {
+  margin-bottom: 20px;
+}
+
+.quiz_steps__formsItem__preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  border-radius: 5px;
+  border: 1px solid #a9cce3;
+  background: #d1e7f6;
+  padding: 10px 20px;
+}
+
+.quiz_steps__formsItem__preview__img {
+  max-width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz_steps__formsItem__preview__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.quiz_steps__formsItem__preview__content p {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.quiz_steps__formsItem__preview__pickup {
+  margin-top: 16px;
+}
+
+.quiz_steps__formsItem__preview__content span,
+.quiz_steps__formsItem__preview__pickup {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.quiz_steps__formsItem h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.quiz_steps__formsItem__preview {
+  margin-bottom: 40px;
+}
+
+.quiz_steps__formsItem__billing {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.09);
+  border: 1px solid #dedede;
+  padding: 32px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.payment_method img {
+  width: 100%;
+}
+
+.payment_action {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.billing_total p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.billing_total div {
+  font-weight: 600;
+}
+
+.big-price {
+  font-size: 30px;
+}
+
+.price_ex:after {
+  content: "excluding VAT";
+  font-size: 14px;
+  padding-left: 8px;
+}
+.price_vat:after {
+  content: "VAT";
+  font-size: 14px;
+  padding-left: 8px;
+}
+.big-price:after {
+  content: "including VAT";
+  font-size: 14px;
+  padding-left: 8px;
+}
+.billing_total {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.quiz_steps__formsItem {
+  display: none;
+}
+.quiz_step__item.active .quiz_stepItem__circle {
+  background: #000;
+  color: #fff;
+}

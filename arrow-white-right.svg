@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="10px" viewBox="0 0 14 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Arrow</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-(mobile)" transform="translate(-328.000000, -610.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Booking-Widget" transform="translate(20.000000, 328.000000)">
+                <g id="Arrow-Button" transform="translate(20.000000, 262.000000)">
+                    <g id="Arrow" transform="translate(288.000000, 20.000000)">
+                        <polygon id="Path" points="0 4.28571429 11.5384615 4.28571429 11.5384615 5.71428571 0 5.71428571"></polygon>
+                        <polygon id="Path" points="7.9871758 10 6.92307692 8.95481035 10.9501658 5 6.92307692 1.04518965 7.9871758 0 13.0769231 5.00001791"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
