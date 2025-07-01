@@ -11,6 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -194,7 +198,7 @@
             <div class="quiz_inputs">
               <p>Date</p>
               <div class="quiz_input">
-                <input type="datetime" />
+                <input id="trip-date" type="text" />
               </div>
             </div>
             <div class="quiz_inputs">
@@ -674,6 +678,7 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNox1zNvqj92c_JGvxSSnPkbwvZOQHSYg&libraries=places"></script>
     <script src="app.js"></script>
   </body>

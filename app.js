@@ -38,6 +38,8 @@ window.addEventListener("load", initAutocomplete);
    Multi‑step form logic                     
 ────────────────────────────────────────── */
 document.addEventListener("DOMContentLoaded", () => {
+
+    const dateInput = document.getElementById("trip-date");
     /* selectors */
     const steps = document.querySelectorAll(".quiz_steps__formsItem");
     const stepIndicators = document.querySelectorAll(".quiz_step__item");
@@ -60,6 +62,23 @@ document.addEventListener("DOMContentLoaded", () => {
             else localStorage.setItem(key, el.value);
         });
     });
+
+    flatpickr(dateInput, {
+        enableTime: true, // показываем выбор времени
+        dateFormat: "d.m.Y H:i", // формат, который увидит пользователь
+        altInput: false, // оставляем одно поле
+        minDate: "today", // нельзя выбрать прошедшую дату
+        time_24hr: true,
+        onChange() {
+            /* Flatpickr ставит value программно, 
+               поэтому вручную триггерим событие, 
+               чтобы ваш autosave его поймал */
+            dateInput.dispatchEvent(new Event("input", {
+                bubbles: true
+            }));
+        }
+    });
+
 
     /* 2. One‑way / By‑the‑hour tabs */
     const dropoffGroup = document.getElementById("dropoff-location").closest(".quiz_inputs");
